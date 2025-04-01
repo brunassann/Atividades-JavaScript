@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salario minimo</title>
+</head>
+<body>
+    <h1>Salário minimo</h1>
+
+    <script>
+        let salario = Number(prompt("Qual o seu salário?"));
+        let minimo = Number(prompt("Qual o valor do salário mínimo atual?"));
+    
+        // Verifica se os valores inseridos são válidos
+        if (isNaN(salario) || isNaN(minimo) || salario <= 0 || minimo <= 0) {
+            document.write("Por favor, insira valores válidos para o salário e o salário mínimo.");
+        } else {
+            let quantidade = salario / minimo;
+            document.write(`O seu salário equivale a ${quantidade.toFixed(2)} salários mínimos.`);
+        }
+    </script>
+    
+    
+</body>
+</html>

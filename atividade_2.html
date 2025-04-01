@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área e perímetro de um circulo</title>
+</head>
+<body>
+    
+    <h1> Área e perímetro de um circulo com JavaScript </h1>
+
+    <script>
+
+        let raio = parseFloat(prompt('Coloque o raio do circulo:'))
+        let pi = 3.14 
+        let fixo_perimetro = 2
+
+        //perimetro
+        let perimetro = fixo_perimetro * pi * raio
+        document.write("O perímetro do circulo é:" + "\n" + perimetro + "<br></br>"  )
+
+        //area
+        let area =  pi * raio * raio
+        document.write("A área do circulo é:" + "\n" + area + "<br></br>"  )
+
+    </script>
+
+</body>
+</html>

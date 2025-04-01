@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indice de Massa Corporal</title>
+</head>
+<body>
+    <h1> Calculo de IMC e classificação com JavaScript</h1>
+
+    <script>
+
+        let peso = parseFloat(prompt('Qual seu peso? (Kg)'))
+        let altura = parseFloat(prompt('Qual sua altura? (M)'))
+
+        let IMC =  (peso / Math.pow(altura,2))
+        document.write("O seu IMC é de:" + "\n" + IMC.toFixed(2) + "\n" + "Kg/m2")
+
+    if (IMC <= 18.5) {
+    document.write('Magreza');
+    } 
+    else if (IMC <= 24.9) {
+    document.write('Normal');
+    } 
+    else if (IMC <= 29.9) {
+    document.write('Sobrepeso');
+    } 
+    else if (IMC <= 34.9) {
+    document.write('Obesidade grau I');
+    } 
+    else if (IMC <= 39.9) {
+    document.write('Obesidade grau II');
+    } 
+    else {
+    document.write('Obesidade grau III');
+    }
+
+
+    </script>
+</body>
+</html>

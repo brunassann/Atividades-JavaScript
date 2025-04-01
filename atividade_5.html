@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preço e desconto</title>
+</head>
+<body>
+    
+    <h1> Preço e desconto com JavaScript</h1>
+
+    <script>
+        let preco = parseFloat(prompt('Entre com o valor do produto:'))
+        let quantidade = parseFloat(prompt('Entre com a quantidade comprada:'))
+        let desconto = 0.1
+
+        let valor_final = preco * quantidade
+        document.write("A valor final é:" + "\n" + valor_final + "<br></br>")
+
+        let valor_desconto = preco * quantidade - ((preco * quantidade) * desconto) 
+
+        if(quantidade>=10){
+            document.write("A valor final com desconto é:" + "\n" + valor_desconto + "<br></br>")
+        }
+
+    </script>
+
+</body>
+</html>

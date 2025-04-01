@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprovado ou reprovado</title>
+</head>
+<body>
+    <h1>Aprovado ou reprovado</h1>
+
+    <script>
+        let nome = prompt("Qual é seu nome: ")
+        let nota = Number(prompt('Qual é sua nota? '))
+
+        if (nota >= 7){
+            document.write(`Parabéns ${nome}! Você foi aprovado(a)!`)
+        } 
+        else {
+            document.write(`${nome}! Infelizmente você foi reprovado(a)!`)
+        }
+    </script>
+    
+</body>
+</html>

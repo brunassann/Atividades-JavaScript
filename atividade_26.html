@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos as compras</title>
+</head>
+<body>
+
+    <h1>Vamos as compras</h1>
+
+    <script>
+        let produto = prompt("Temos esses produtos: " + "\n" + "Coxinha" + "\n" + "Risole" + "\n" + "Enroladinho"+ "\n" + "Digite OK para continuar")
+
+        alert("O valor da coxinha é: R$ 4,00 - (001)" + "\n" + "O valor do risole é: R$ 8,00 - (002)" + "\n" + "O valor do enroladinho é: R$ 11,00 - (003)")
+
+        let codigo = parseInt(prompt("Qual o código do produto que você quer? "))
+
+        let quantidade = parseInt(prompt("Informe a quantidade que você deseja: ")) 
+
+
+        if (codigo == "0001") {
+            document.write(`O valor a ser pago é R$ ${( 4*quantidade).toLocaleString('pt-BR')}`)
+        } else if (codigo == "0002") {
+            document.write(`O valor a ser pago é  R$ ${( 8*quantidade).toLocaleString('pt-BR')}`)
+        } else if (codigo == "0003") {
+            document.write(`O valor a ser pago é R$ ${( 11*quantidade).toLocaleString('pt-BR')}`)
+        }
+    </script>
+    
+</body>
+</html>

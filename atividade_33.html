@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom dia ou boa tarde</title>
+</head>
+<body>
+
+    <h1>Bom dia ou boa tarde</h1>
+    <script>
+
+        let nome = prompt("Digite o seu nome: ")
+        let turno = prompt("Digite o seu turno (M para matutino e V para vespertino)").toLocaleUpperCase()
+
+        if (turno == 'M') {
+            document.write(`Bom dia ${nome}!`)
+        } else if (turno == 'V') {
+            document.write(`Boa tarde ${nome}!`)
+        }   
+    </script>
+    
+</body>
+</html>

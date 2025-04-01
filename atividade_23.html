@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dias dos meses</title>
+</head>
+<body>
+    <h1>Dias dos meses</h1>
+
+    <script>
+        let meses = prompt("Digite o nome do mês: ").toLocaleLowerCase()
+
+        if (meses == 'fevereiro') {
+            document.write(`${meses} tem 28 dias`)
+
+        } else if (meses == 'janeiro' || meses == 'maio' || meses == 'março' || meses == 'julho' || meses == 'agosto' || meses == 'outubro' || meses == 'dezembro') {
+            document.write(`O ${meses} tem 31 dias.`)
+
+        }else if (meses == 'abril' || meses == 'setembro' || meses == 'novembro' || meses == 'junho'){
+            document.write(`O ${meses} tem 30 dias.`)
+
+        } else {
+            document.write(`Este mês é inválido, por favor tente novamente!`)
+        }
+
+        
+    </script>
+    
+</body>
+</html>
